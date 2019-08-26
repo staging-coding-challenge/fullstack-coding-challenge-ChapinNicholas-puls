@@ -1,0 +1,24 @@
+<div class="palePlate">
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">List Name</th>
+      <th scope="col">List Desc</th>
+
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let list of groceryLists">
+      <th scope="row">{{list.id}}</th>
+      <td>{{list.name}}</td>
+      <td>{{list.desc}}</td>
+      <td><button class="btn" (click)='seeList(list.id)'>See List</button></td>
+    </tr>
+
+
+  </tbody>
+</table>
+</div>
+

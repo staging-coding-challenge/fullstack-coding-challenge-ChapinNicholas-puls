@@ -1,0 +1,24 @@
+<button type="button" class="btn btn-secondary center2" (click)='goHome()'>Go Back</button>
+<div class="palePlate">
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Item Name</th>
+      <th scope="col">Item Type</th>
+
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let item of items">
+      <th scope="row">{{item.id}}</th>
+      <td>{{item.name}}</td>
+      <td>{{item.type}}</td>
+    </tr>
+
+  </tbody>
+</table>
+
+</div>
+<button class="btn center btn-info" (click)='addToList(this.listId)'> add new item </button>
